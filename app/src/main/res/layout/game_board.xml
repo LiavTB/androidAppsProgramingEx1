@@ -1,85 +1,56 @@
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/gridLayout"
-    android:layout_width="163dp"
-    android:layout_height="464dp"
-    android:layout_margin="16dp"
-    android:columnCount="3"
-    android:rowCount="3"
-    app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <Button
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:tag="0" />
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1">
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 1"
-        android:tag="1" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 2"
-        android:tag="2" />
+        <Button
+            style="@style/GameButton"
+            android:tag="0" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 3"
-        android:tag="3" />
+        <Button
+            style="@style/GameButton"
+            android:tag="1" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 4"
-        android:tag="4" />
+        <Button
+            style="@style/GameButton"
+            android:tag="2" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 5"
-        android:tag="5" />
+        <Button
+            style="@style/GameButton"
+            android:tag="3" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 6"
-        android:tag="6" />
+        <Button
+            style="@style/GameButton"
+            android:tag="4" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 7"
-        android:tag="7" />
+        <Button
+            style="@style/GameButton"
+            android:tag="5" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:contentDescription="Button 8"
-        android:tag="8" />
+        <Button
+            style="@style/GameButton"
+            android:tag="6" />
+
+        <Button
+            style="@style/GameButton"
+            android:tag="7" />
+
+        <Button
+            style="@style/GameButton"
+            android:tag="8" />
 
 </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
