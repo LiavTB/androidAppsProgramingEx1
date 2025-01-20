@@ -51,15 +51,17 @@ class MainActivity : AppCompatActivity() {
 
             if (checkWin()) {
                 gameActive = false
-                statusTextView.text = "Player ${if (activePlayer == 0) "X" else "O"} wins!"
+                statusTextView.text =
+                    getString(R.string.player_wins, if (activePlayer == 0) "X" else "O")
                 playAgainButton.visibility = View.VISIBLE
             } else if (gameState.all { it != -1 }) {
                 gameActive = false
-                statusTextView.text = "It's a draw!"
+                statusTextView.text = getString(R.string.it_s_a_draw)
                 playAgainButton.visibility = View.VISIBLE
             } else {
                 activePlayer = 1 - activePlayer
-                statusTextView.text = "Player ${if (activePlayer == 0) "X" else "O"}'s turn"
+                statusTextView.text =
+                    getString(R.string.player_s_turn, if (activePlayer == 0) "X" else "O")
             }
         }
     }
@@ -79,7 +81,7 @@ class MainActivity : AppCompatActivity() {
         activePlayer = 0
         gameActive = true
         gameState.fill(-1)
-        statusTextView.text = "Player X's turn"
+        statusTextView.text = getString(R.string.player_x_turn)
         playAgainButton.visibility = View.GONE
 
         for (i in 0 until gridLayout.childCount) {

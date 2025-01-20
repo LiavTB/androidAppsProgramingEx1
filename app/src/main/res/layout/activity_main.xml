@@ -6,107 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="163dp"
-        android:layout_height="464dp"
-        android:layout_margin="16dp"
-        android:columnCount="3"
-        android:rowCount="3"
-        app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
+    <include
+        layout="@layout/game_board"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
+<!--            app:layout_constraintBottom_toTopOf="@+id/statusAndButton"-->
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="0" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="1"
-            android:contentDescription="Button 1" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="2"
-            android:contentDescription="Button 2" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="3"
-            android:contentDescription="Button 3"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="4"
-            android:contentDescription="Button 4"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="5"
-            android:contentDescription="Button 5"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="6"
-            android:contentDescription="Button 6"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="7"
-            android:contentDescription="Button 7"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:tag="8"
-            android:contentDescription="Button 8"/>
-
-    </GridLayout>
-
-    <TextView
-        android:id="@+id/statusTextView"
-        android:layout_width="wrap_content"
+    <include
+        layout="@layout/status_and_button"
+        android:id="@+id/statusAndButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Player X's turn"
-        app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
-
-    <Button
-        android:id="@+id/playAgainButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play Again"
-        android:visibility="gone"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
