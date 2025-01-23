@@ -1,0 +1,18 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="android:textColor">@color/status_text_color</item>
+    </style>
+
+    <style name="GameButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">@drawable/button_background</item>
+<!--        <item name="android:backgroundTint">@color/divider_color</item>-->
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

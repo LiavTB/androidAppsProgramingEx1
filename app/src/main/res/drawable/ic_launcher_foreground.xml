@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- O Shape (Circle) -->
+    <path
+        android:strokeColor="#4C58AF"
+    android:strokeWidth="12"
+    android:pathData="M 100 55 A 45 45 0 1 1 100 155 A 45 45 0 1 1 100 55" />
+
+    <!-- X Shape -->
+    <path
+        android:strokeColor="#F6E01E"
+    android:strokeWidth="14"
+    android:pathData="M 60 60 L 140 140" />
+    <path
+        android:strokeColor="#F6E01E"
+    android:strokeWidth="14"
+    android:pathData="M 60 140 L 140 60" />
+
+</vector>
